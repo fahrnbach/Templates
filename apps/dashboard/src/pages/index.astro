@@ -1,0 +1,14 @@
+---
+import ThemeToggle from '../components/ThemeToggle.svelte';
+import StatsToggle from '../components/StatsToggle.svelte';
+let mode = 'overview';
+---
+
+<h1 class="text-3xl font-bold text-center mt-10">
+  Nomad Fabricator
+</h1>
+
+<div class="flex justify-center gap-6 mt-8">
+  <ThemeToggle client:load />
+  <StatsToggle client:load mode={mode} />
+</div>
